@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Pros</span>per</a>
+
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navbar menu-links">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact" class="contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="home">
+        <div class="home-content">
+            <h1>Hi<br /> I'm Prosper <span></span></h1>
+            <h3 class="text-animation">
+                I'm a
+                <span></span>
+            </h3>
+
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Experience</button>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="Screenshot 2025-04-04 124205.png" alt="Profile Image" />
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>My Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <h3><span>🎨2D</span> Animation</h3>
+                <p>Creating captivating 2D animations for videos, explainers, and engaging digital content.</p>
+            </div>
+            <div class="services-box">
+                <h3><span>🎬Video</span> Editing</h3>
+                <p>Editing high-quality videos for Web3, crypto updates, brand promotions, and storytelling.</p>
+            </div>
+            <div class="services-box">
+                <h3><span>🎥Content</span> Creation</h3>
+                <p>Crafting compelling content strategies and visuals to boost online visibility and community growth.</p>
+            </div>
+            <div class="services-box">
+                <h3><span>🚸Community</span> Management</h3>
+                <p>Managing and nurturing online communities, increasing engagement, and fostering active participation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2>My Experience</h2>
+        <div class="experience-container">
+            <div class="experience-box">
+                <h3>2D Animator</h3>
+                <span class="date">2025</span>
+                <p>Created smooth and engaging animations for digital content using motion design tools.</p>
+            </div>
+            <div class="experience-box">
+                <h3>Video Creator/Editor</h3>
+                <span class="date">2024 – 2025</span>
+                <p>Produced video content for Web3 brands, crypto news updates, and personal storytelling.</p>
+            </div>
+            <div class="experience-box">
+                <h3>Community Manager – Ekolance</h3>
+                <span class="date">2022 – 2025</span>
+                <p>
+                    Built and managed active communities, created newsletters, handled engagement strategies, and boosted online
+                    visibility through partnerships.
+                </p>
+            </div>
+            <div class="experience-box">
+                <h3>User Research – Muna Wallet Africa</h3>
+                <span class="date">2022</span>
+                <p>
+                    Worked with the dev team to enhance UX, ran surveys, and gathered insights from users to improve app performance.
+                </p>
+            </div>
+            <div class="experience-box">
+                <h3>Community Lead – Cryptohills Academy</h3>
+                <span class="date">2021 – 2022</span>
+                <p>
+                    Developed engagement strategies and ensured fast, helpful responses to support active community growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Community Platform</h3>
+                <span class="project-date">2023</span>
+                <p>Developed a dynamic platform to connect users and streamline community interactions.</p>
+            </div>
+            <div class="project-box">
+                <h3>Crypto News Portal</h3>
+                <span class="project-date">2024</span>
+                <p>Created an interactive portal for the latest crypto news, trends, and market updates.</p>
+            </div>
+            <div class="project-box">
+                <h3>Social Engagement Campaign</h3>
+                <span class="project-date">2022</span>
+                <p>Launched a successful campaign that boosted social media engagement and online presence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-box">
+                <h3>Bachelor's in Communications</h3>
+                <span>University of Benin, Nigeria</span>
+                <span class="education-date">2018 - 2022</span>
+                <p>Bachelor of Library and Information Science</p>
+            </div>
+            <div class="education-box">
+                <h3>Certificate in Public Speaking</h3>
+                <span class="education-date">2023</span>
+                <p>Completed an intensive course covering public speaking and effective communications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with EmailJS integration -->
+    <section id="contact" class="contact-form">
+        <h2>Contact <span>Me</span></h2>
+        <!-- The form below will send an email using EmailJS -->
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" name="from_name" placeholder="Full Name" required />
+                <input type="email" name="reply_to" placeholder="Email" required />
+            </div>
+            <div class="input-box">
+                <input type="text" name="phone" placeholder="Phone Number" />
+                <input type="text" name="subject" placeholder="Subject" required />
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn-1" />
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">© 2025 Prosper | All Rights Reserved</p>
+    </footer>
+
+    <!-- External Script for EmailJS functionality -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-links');
+            const icon = document.querySelector('.hamburger-icon');
+            menu.classList.toggle('open');
+            icon.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
