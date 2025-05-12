@@ -12,7 +12,7 @@
     <header class="header">
         <a href="#" class="logo"><span>Pros</span>per</a>
 
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-icon" id="hamburger" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
@@ -245,16 +245,14 @@
 
     <!-- External Script for EmailJS functionality -->
     <script>
-        function toggleMenu() {
-        const navbar = document.getElementById('navbar');
-        navbar.classList.toggle('active');
-    }
-        function toggleMenu() {
-            const menu = document.querySelector('.menu-links');
-            const icon = document.querySelector('.hamburger-icon');
-            menu.classList.toggle('open');
-            icon.classList.toggle('open');
-        }
+        // Get the hamburger and menu elements
+const hamburger = document.getElementById('hamburger');
+const navbar = document.getElementById('navbar');
+
+// Toggle menu visibility on hamburger click
+function toggleMenu() {
+    navbar.classList.toggle('show');
+}
     </script>
 </body>
 </html>
